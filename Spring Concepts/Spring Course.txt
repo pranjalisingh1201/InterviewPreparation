@@ -1,0 +1,218 @@
+Spring Boot
+================
+
+Dependency Injection and IOC 
+
+
+Spring Core
+=================
+
+DI and IOC Completed with Setter Injection and Constructor Injections.
+
+
+Spring MVC
+=================
+
+1) Create project with Spring Web.
+
+2) spring-boot-starter-web is the dependency we use to create web apps or MVC projects.
+
+3) Controller --> Handle requests.
+				  Process Requests.
+				  Keep data in Models.
+				  Returns data with view.
+				  To call a controller we also have a front controller---> Handles the requests and maps to the unique controller client is requesting for.
+				 
+4) Model --> Holds Data.
+
+5) View --> Layout of the webapp.	
+
+6) Front Controllers are Dispatcher Servlets.
+
+			 
+Spring ORM
+=================
+
+Object Relational Mapping 
+===========================
+
+1) Table name is Class Name 
+
+2) Variables in class are columns in Table.
+
+3) One Class can have multiple Objects, also one Table can have multiple rows.
+
+4) Each Object will represnt one row in the table.
+
+5) For Mapping we use ORM , this is done by JPA (JAVA Persistance API).
+
+6) We have Spring Application and we have Hibernate and we have Database or MySQL and to connect these we have Spring ORM.
+
+7) Spring ORM creates an Instance for Hibernate and Configurations are done in Spring configuration.
+
+8) Begin/Commit/Rollback Transactions will be taken care by Spring Tx - Spring Transactions.
+
+Why Hibernate and not JDBC:
+============================
+
+Because it can handle transactions in a good way also we can acheive ORM here.
+
+
+Spring JPA
+================
+
+Spring REST(RESTful Webservice or Web API.)
+======================
+
+1) No Actions -- Nouns
+
+2) Stateless -- No Session on the server --  Returns state of the object from a normal POJO class -- Only Data -- We can achive this by Representational State called REST .
+
+3) No Parameters in Address bar.
+
+4) Client is not a browser --Server to Server Call.
+
+5) REST uses in-built functions of hhtp Protocol -- GET/POST/PUT/DELETE
+
+6) Jackson is used to convert Data in json and vice versa.
+
+
+Spring AOP
+=================
+
+Conccepts:
+
+1) Aspect : a class with all aop functions.
+
+2) Join Point : point of the execution where we want to call the method.
+
+3) Advice: the actual method.
+
+4) Pointcut : the expression we use to call the advice.
+
+5) Weaving : when to call the advice or connect it.
+
+Types of Advice :
+
+1) Before Advice : Before calling the Advice.
+
+2) After Returning Advice : After Calling the Advice.
+
+3) After Throwing Advice : 
+
+4) After Finally Advice : 
+
+5) Around Advice : In between the call of advice.
+
+
+Cloud 
+=========
+
+1) Group of Computers on the server.
+
+2) In local machine the application or the webservice is not present for the whole world and not anyone can access it.
+
+3) For that we would require a public ip address and a domain name also a server to host the app.
+
+4) We have cloud providers who provide the resources.
+
+5) On- Premise:
+===================
+we had everything with us.
+
+Functions
+Application
+Runtime+Containers
+Operating System and Management Tools.
+Networking storage and servers
+Data Centre
+
+6) IAAS:
+==================
+We dont have the last steps:
+
+Functions
+Application
+Runtime+Containers
+Operating System and Management Tools.
+Networking storage and servers --Provided by Service Provider.
+Data Centre --Provided by Service Provider.
+
+7)  CAAS: Containers
+==================
+We dont have the last steps:
+
+Functions
+Application
+Runtime+Containers --Use Kubernetes or Docker
+Operating System and Management Tools. --Provided by Service Provider.
+Networking storage and servers --Provided by Service Provider.
+Data Centre --Provided by Service Provider.
+
+7)  PAAS: 
+==================
+We dont have the last steps:
+
+Functions
+Application
+Runtime+Containers --Provided by Service Provider.
+Operating System and Management Tools. --Provided by Service Provider.
+Networking storage and servers --Provided by Service Provider.
+Data Centre --Provided by Service Provider.
+
+7)  SAAS: GMAIL / DRIVER /GOOGLE PHOTOS
+===========================================
+We dont have the last steps:
+
+Functions --Provided by Service Provider.
+Application --Provided by Service Provider.
+Runtime+Containers --Provided by Service Provider.
+Operating System and Management Tools. --Provided by Service Provider.
+Networking storage and servers --Provided by Service Provider.
+Data Centre --Provided by Service Provider.
+
+Cloud Native Application
+==============================
+
+1) Codebase : One Codebase tracked in revision control,many deploy -- GIT
+                                Deploy
+								===========
+								1)Production
+								2)Staging
+								3)Engineering
+		Codebase--------------->
+
+2)Dependencies : We should not share the library folder in our project we share the pomfile with needed dependencies with required versions.
+We can use a manifest file.So anyone can download the dependencies when required.
+
+Explicitly Declare and isolate dependencies.
+
+3) Configurations : Dont hardcode the environment variables like passwords.
+
+4) Backing Services : Treat Backing Services as attached Resources.
+
+5) Build, Release , run : Create a release but while making changes do it in build and then when u create a release of it, it will be of a new version so it makes it easier to back out.
+
+6) Processes : Execute the app as one or more stateless processes.Do not store anything in a session.
+
+7) Port Binding : Export Services via port binding
+
+8) Concurrency : Scale out via the process model.
+
+9) Disposability : Maximize robustness with fast startup and graceful shutdown of the application without lossing data.
+
+10) Dev/Prod Parity : Keep development, staging and production as similar as possible.
+
+11) Logs : Treat logs as event streams
+
+12) Admin Processes : Run admin/management tasks as one-off processes.
+
+
+Quiz App:
+===========
+
+1) We are going to build a Monolithic Apllication first and then we will break it down into micro-services.
+
+Using Dependencies like : spring web, postgre sql , data jpa, lambok.
+
+Installed : Pgadmin and intellij community version.
