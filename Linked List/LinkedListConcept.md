@@ -83,3 +83,7 @@ node2(20|ref(30)
 node3(30|ref(null)
 -----
 ```
+
+###### Note : 
+
+- In linked List we cannot perform searching with binary search algorithm as it is hard to find out the middle node.But we can search elements faster in case of sorted linked lists with skip list. 

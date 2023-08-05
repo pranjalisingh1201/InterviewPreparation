@@ -1,7 +1,14 @@
 // Search in a Linked List (Iterative and Recursive):
 /*
- * Input : head -> 10 -> 5 ->
- *  h
+ * Input : head -> 10 -> 5 -> 20 -> 15   key: 20 
+ * Output: 3 
+ * 
+ * Input : head -> 10 -> 15              Key: 20
+ * Output: -1 
+*/
+/*
+ * Time Complexity : Big O (N)
+ * Space Complexity : Big O (N)
 */
 
 public class SearchPositionRec {
