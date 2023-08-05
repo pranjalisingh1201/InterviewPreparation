@@ -13,8 +13,10 @@ public class SearchPositionRec {
         head.next.next = new Node(20);
         head.next.next.next = new Node(15);
         int key = 20;
-        int position = searchIterative(head,key);
-        System.out.println(position);
+        int iposition = searchIterative(head,key);
+        int rposition = searchRecursive(head,key);
+        System.out.println(iposition);
+        System.out.println(rposition);
     }
 
     public static int searchIterative(Node head, int key)
@@ -28,6 +30,17 @@ public class SearchPositionRec {
             currNode = currNode.next;
         }
         return position;
+    }
+
+    public static int searchRecursive(Node head, int key)
+    {
+        Node currNode = head;
+
+        if(currNode==null) return -1;
+        if(currNode.data==key) return 1;
+        int res=searchRecursive(currNode.next,key);
+        if(res==-1) return -1;
+        else return res+1;
     }
     
 }
