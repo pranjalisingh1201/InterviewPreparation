@@ -60,3 +60,35 @@ class Node {
         this.data = data;
     }
 }
+/*
+ * 
+ * int search (Node head,int x)
+ * {
+ *      int pos = 1;
+ *      Node curr = head;
+ *      while(curr!=head)
+ *      {
+ *          if(curr.data==key) return 1;
+ *          else {
+ *          pos++;
+ *          curr = curr.next;
+ *          }
+ *      }
+ *      return -1;
+ * }
+*/
+
+/*
+ * 
+ * int search (Node head,int x)
+ * {
+ *      if(head==null) return -1;
+ *      if(head.data == x) return 1;
+ *      else
+ *      {
+ *      int res = search(head.next,x);
+ *      if(res==-1) return -1;
+ *      else return res+1;
+ *      }
+ * }
+*/
