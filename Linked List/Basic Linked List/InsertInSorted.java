@@ -45,7 +45,7 @@ public class InsertInSorted {
         }
         else{
         Node currNode = head;
-        for(int i=1;currNode.next!=null && currNode.next.data<data;i++)
+        while(currNode.next!=null && currNode.next.data<data)
             currNode=currNode.next;
         newNode.next=currNode.next;
         currNode.next=newNode;
