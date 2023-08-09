@@ -59,3 +59,18 @@ class Node {
         this.data = data;
     }
 }
+/*
+ *  1) prev = null 10 -> 20 -> 30
+ *                  |     |
+ *                 curr next
+ *  2) null <-10 -> 20 -> 30
+ *             |     |     |
+ *            prev  curr next
+ *  3) null <-10 <- 20 -> 30    null
+ *                   |     |     |
+ *                  prev  curr next
+ *  4) null <-10 <- 20 <- 30    null  null
+ *                         |     |     |
+ *                       prev  curr next 
+ *  Hence when curr == null return prev as head.
+*/
