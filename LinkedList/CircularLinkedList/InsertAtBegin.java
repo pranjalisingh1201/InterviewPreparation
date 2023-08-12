@@ -35,6 +35,12 @@ class InsertAtBegin{
     public static Node insert (Node head, int x)
     {
         Node newNode = new Node(x);
+        if(head==null)
+        {
+            newNode.next=newNode;
+            head = newNode;
+            return head;
+        }
         Node curr = head.next;
          while(curr.next!=head)
         {
@@ -47,3 +53,28 @@ class InsertAtBegin{
     }
 
 }
+
+/* DO insert at Begin in Big O(1) complexity.
+ * By Inserting node at head.next position and swapping the values.
+ * 
+ * Node insertBegin(Node head, int x)
+ * {
+ *  Node temp = new Node(x);
+ *  if(head==null)
+ *  {
+ *      temp.next = temp;
+ *      return temp;
+ *  }
+ *  else{
+ *      temp.next = head.next;
+ *      head.next = temp;
+ *      int t = head.data;
+ *      head.data = temp.data;
+ *      temp.data = t;
+ * 
+ *  }
+ *  return head; 
+ * }
+ * 
+ * 
+ */
