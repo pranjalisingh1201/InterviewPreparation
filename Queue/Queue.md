@@ -1,6 +1,6 @@
 ## Queue
 
-- Has FIFO Functionality
+- Has FIFO Functionality.
 - Has two ends Rear (add) Front (remove).
 - Addition Operation at the rear end is called Enqueue() operation and is used to Add Elements.
 - Removal Operation at the front end is called Dequeue() is used to Remove Element.
