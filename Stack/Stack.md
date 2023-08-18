@@ -11,11 +11,15 @@
 
 ##### Push(x) Operation
 
+```text
 empty  - > push(10) - > 10 - > push(20) - > 20,10 - > push(30) - > 30,20,10.
+```
 
 ##### Push() Operation
 
+```text
 30,20,10  - > pop() - > 20,10- > pop() - > 10  - > pop() - > empty.
+```
 
 ### Stack Operations
 
