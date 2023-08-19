@@ -56,11 +56,18 @@ public class ArrayDeque {
         Deque dq = new Deque();
         dq.insertFront(10);
         dq.insertRear(20);
+        System.out.println("get front element : "+ dq.getFront());
+        System.out.println("get rear element : "+ dq.getRear());
         dq.insertFront(30);
         dq.insertRear(50);
+        System.out.println("get front element : "+ dq.getFront());
+        System.out.println("get rear element : "+ dq.getRear());
         dq.deleteFront();
+        System.out.println("After delete rear element new front become : " + 
+                                dq.getFront());
         dq.deleteRear();
-        
+        System.out.println("After delete rear element new rear become : " + 
+                                dq.getRear());
     }
 }
 
