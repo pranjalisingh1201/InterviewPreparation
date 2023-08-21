@@ -46,10 +46,10 @@ public class NodesAtK {
 
     public static void printNodesAtK(Node root, int K)
     {
-        if(root==null) return;
-        if(K==0)
+        if(root==null) return;//BASE CASE- if any node at level k is null just return without printing.
+        if(K==0)//Level root = 2 // left child = 1 and leaf node = 0.
         {
-        System.out.println(root.key);
+        System.out.println(root.key);//Print node at K level , if node is not present , it will return in the base case check.
         }
         else
         {
@@ -68,3 +68,20 @@ class Node{
         this.key = key;
     }
 }
+
+/*
+ * Recursion Tree
+ * --------------------------
+ * 
+ * printNodesAtK(10,2)
+ *                  printNodeAtK(20,1)
+ *                                  printNodesAtK(40,0)
+ *                                                  print(40)
+ *                                  printNodesAtK(50,0)
+ *                                                  print(50)
+ *                  printNodesAtK(30,1)
+ *                                  printNodesAtK(null,0)
+ *                                                  return
+ *                                  printNodesAtK(70,0)
+ *                                                  print(70)
+*/
