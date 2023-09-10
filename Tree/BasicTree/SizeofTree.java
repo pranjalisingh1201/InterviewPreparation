@@ -1,4 +1,4 @@
-package Tree.BasicTree;
+
 //Size of Binary Tree
 /*
  * Input :      10

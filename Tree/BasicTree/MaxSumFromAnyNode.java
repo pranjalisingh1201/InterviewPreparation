@@ -39,8 +39,8 @@ public class MaxSumFromAnyNode {
         if(node==null) return 0;
         int lefts = Math.max(0,help(node.left));
         int rights = Math.max(0,help(node.right));
-        maxi = Math.max(maxi,lefts+rights+node.data);
-        return node.data + Math.max(lefts,rights);
+        maxi = Math.max(maxi,lefts+rights+node.key);
+        return node.key + Math.max(lefts,rights);
     }
 }
 

@@ -1,4 +1,3 @@
-package Tree.BasicTree;
 // Tree Traversal - Inorder Preorder Postorder
 /* Inorder : 
  * Output :20,10,40,30,50

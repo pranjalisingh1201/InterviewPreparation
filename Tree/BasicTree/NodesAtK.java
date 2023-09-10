@@ -1,4 +1,3 @@
-package Tree.BasicTree;
 // Print Nodes at Distance K
 /*
  * Input : K=2
@@ -32,6 +31,7 @@ package Tree.BasicTree;
  * 
  * Note : if K==0 the print root.
 */
+
 public class NodesAtK {
     public static void main(String[] args) {
         Node root = new Node(10);
@@ -57,6 +57,7 @@ public class NodesAtK {
             printNodesAtK(root.right, K-1);
         }
     }
+
 }
 
 class Node{

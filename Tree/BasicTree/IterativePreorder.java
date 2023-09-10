@@ -1,5 +1,3 @@
-package Tree.BasicTree;
-
 import java.util.Stack;
 
 //Iterative Preorder Traversal

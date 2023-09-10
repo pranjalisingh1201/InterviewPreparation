@@ -1,4 +1,4 @@
-package Tree.BasicTree;
+
 // Level Order Traversal or Breadth First Search of Binary Tree.
 /*
  * Input :          10     Print level 4

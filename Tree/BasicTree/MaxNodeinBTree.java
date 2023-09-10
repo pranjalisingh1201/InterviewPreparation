@@ -1,5 +1,3 @@
-package Tree.BasicTree;
-
 //Maximum in binary tree
 /*
  * Input :          10

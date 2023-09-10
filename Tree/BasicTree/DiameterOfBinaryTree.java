@@ -1,4 +1,4 @@
-package Tree.BasicTree;
+
 /*
  * 
  * Diameter of a Binary Tree:
